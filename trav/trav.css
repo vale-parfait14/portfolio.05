@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+    --my-color-gris:#f3f5f8;
+    --my-color-gris-fonce:#3d535f;
+    --my-color-jaune:#ffe800;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "popins",sans-serif;
+}
+
+body{
+    background-color: #2156728e;
+}
+
+.entete{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    line-height: 80px;
+    height: 80px;
+    z-index: 111;
+}
+
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800px;
+    color: rgba(4, 24, 17, 0.233);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.logo b{
+    font-size: 70px;
+    color: var(--my-color-jaune);
+}
+.logo span{
+    color: var(--my-color-jaune);
+}
+
+.menu{
+    display: flex;
+
+}
+
+
+
+.menu li a{
+    margin: 15px;
+   font-size: 25px;
+   color: var(--my-color-gris-fonce);
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+
+.menu li a:hover{
+    
+    color: var(--my-color-jaune);
+    
+ }
+
+ .menu li .apro{
+
+    font-size: 15px;
+}
+ .menu li .apro:hover{
+
+    text-decoration: underline;
+}
+ 
+.menu li .tra:hover{
+
+    text-decoration: underline;
+}
+.menu li .acc{
+
+    font-size: 15px;
+}
+.menu li .acc:hover{
+
+    text-decoration: underline;
+}
+
+.reseaux a{
+    font-size: 25px;
+    color: var(--my-color-gris-fonce);
+    margin: 25px 10px;
+
+}
+
+.reseaux a :hover{
+    
+    color: var(--my-color-jaune);
+    
+
+}
+
+
+
+/*GESTION DE LA RESPONSIVITEE*/
+
+/* Media Queries */
+
+/* Écrans de Bureau (Large) */
+@media (min-width: 1200px) {
+    .entete {
+        padding: 0 20px;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+        font-size: 1px;
+    }
+   
+    
+    .logo {
+        font-size: 2em;
+    }
+
+    .logo b {
+        font-size: 2.5em;
+    }
+    
+    .corps {
+        flex-direction: row;
+        padding: 0 10%;
+    }
+}
+/*
+Écrans de Tablette en Mode Paysage ou Petits Écrans (min-width: 768px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .entete {
+        padding: 0 5px;
+    }
+    
+    .menu li {
+        margin: 0 5px;
+        font-size: 1px;
+        color:  rgba(127, 255, 212, 0.089);
+    }
+    
+    .logo {
+        font-size: 1em;
+    }
+
+    .logo b {
+        font-size: 1em;
+    }
+    
+    .corps {
+        flex-direction: row;
+        padding: 0 5%;
+    }
+}
+
+/*SECTION A PROPOS DE MES */
+
+#main{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffe800;
+    border-radius: 900px;
+    padding: 100px;
+    margin: 80px;
+}
+#partie-1{
+    margin-top: 10px;
+    
+    
+}
+
+.pool-1,.pool-2,.pool-3,.pool-4{
+    border: 1px solid brown;
+    border-radius: 30px;
+    
+}
+
+
+
+.pool-1{
+    background-color: green;
+}
+.pool-1 img{
+    width: 300px;
+    border-radius: 30px;
+}
+.pool-2{
+    background-color: green;
+    margin-top: 10px;
+}
+
+.pool-2 img{
+    width: 300px;
+    border-radius: 30px;
+}
+.pool-3{
+    background-color: green;
+}
+.pool-3 img{
+    width: 300px;
+    border-radius: 30px;
+}
+.pool-4{
+    background-color: green;
+    margin-top: 10px;
+}
+.pool-4 img{
+    width: 300px;
+    border-radius: 30px;
+}
+
+.fab{
+    position: relative;
+    left: 25px;
+}
+
+a{
+    color: #f3f5f8;
+}
+
+
+footer{
+    margin-top: 30px;
+}
+.foot-form{
+    position: relative;
+    text-align:  center;
+}
+#email{
+    width: 350px;
+}
+
+
+
+#reseaux{
+    text-align: center;
+    align-items: center;
+}
+
+
+/*FIN   SECTION A PROPOS DE MES TRAVAUX */
+
+
+/*Écrans Mobiles (max-width: 767px) */
+@media (max-width: 767px) {
+    .entete {
+        padding: 0 2px;
+    }
+    
+    .menu li a{
+        margin: 0px;
+        font-size: 20px;
+       
+    
+    }
+    
+    
+    .logo {
+        font-size: 1em;
+        
+    }
+
+    .logo b {
+        font-size: 1em;
+        
+    }
+    
+    .corps {
+        flex-direction: row;
+        padding: 0 5%;
+    }
+    .reseaux a{
+        font-size: 22px;
+        color: var(--my-color-gris-fonce);
+        margin: 1px;
+    
+    }
+    .menu li a{
+        margin: 5px;
+       font-size: 18px;
+       color: var(--my-color-gris-fonce);
+       letter-spacing: 1px;
+       text-transform: uppercase;
+    }
+    button {
+        font-size: 15px;
+        margin: 1px;
+    }
+}
+
+
